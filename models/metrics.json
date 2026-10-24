@@ -1,0 +1,239 @@
+{
+  "best_model": "XGBoost",
+  "cv_scores": {
+    "Random Forest": {
+      "accuracy_mean": 0.98,
+      "accuracy_std": 0.0245,
+      "f1_macro_mean": 0.9537,
+      "f1_macro_std": 0.0642
+    },
+    "XGBoost": {
+      "accuracy_mean": 0.99,
+      "accuracy_std": 0.02,
+      "f1_macro_mean": 0.9673,
+      "f1_macro_std": 0.0653
+    }
+  },
+  "holdout_accuracy": 1.0,
+  "holdout_macro_f1": 1.0,
+  "n_samples": 99,
+  "classes": [
+    "10-26-26",
+    "14-35-14",
+    "17-17-17",
+    "20-20",
+    "28-28",
+    "DAP",
+    "Urea"
+  ],
+  "classification_report": {
+    "10-26-26": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "14-35-14": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "17-17-17": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "20-20": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "28-28": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "DAP": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "Urea": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 25.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 25.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6
+    ]
+  ],
+  "feature_importances": {
+    "num__Temperature": 0.0585,
+    "num__Humidity": 0.0518,
+    "num__Moisture": 0.0712,
+    "num__Nitrogen": 0.2229,
+    "num__Phosphorous": 0.2523,
+    "num__Potassium": 0.2084,
+    "cat__Soil Type_Black": 0.0085,
+    "cat__Soil Type_Clayey": 0.0116,
+    "cat__Soil Type_Loamy": 0.0058,
+    "cat__Soil Type_Red": 0.0099,
+    "cat__Soil Type_Sandy": 0.0075,
+    "cat__Crop Type_Barley": 0.0061,
+    "cat__Crop Type_Cotton": 0.0067,
+    "cat__Crop Type_Ground Nuts": 0.0076,
+    "cat__Crop Type_Maize": 0.0056,
+    "cat__Crop Type_Millets": 0.0088,
+    "cat__Crop Type_Oil seeds": 0.0077,
+    "cat__Crop Type_Paddy": 0.0049,
+    "cat__Crop Type_Pulses": 0.0056,
+    "cat__Crop Type_Sugarcane": 0.017,
+    "cat__Crop Type_Tobacco": 0.0137,
+    "cat__Crop Type_Wheat": 0.0076
+  },
+  "reference_stats": {
+    "Temperature": {
+      "min": 25.0,
+      "max": 38.0,
+      "mean": 30.28,
+      "p33": 28.34,
+      "p66": 31.68
+    },
+    "Humidity": {
+      "min": 50.0,
+      "max": 72.0,
+      "mean": 59.15,
+      "p33": 54.0,
+      "p66": 62.0
+    },
+    "Moisture": {
+      "min": 25.0,
+      "max": 65.0,
+      "mean": 43.18,
+      "p33": 36.34,
+      "p66": 47.0
+    },
+    "Nitrogen": {
+      "min": 4.0,
+      "max": 42.0,
+      "mean": 18.91,
+      "p33": 12.0,
+      "p66": 22.0
+    },
+    "Phosphorous": {
+      "min": 0.0,
+      "max": 42.0,
+      "mean": 18.61,
+      "p33": 13.0,
+      "p66": 23.68
+    },
+    "Potassium": {
+      "min": 0.0,
+      "max": 19.0,
+      "mean": 3.38,
+      "p33": 0.0,
+      "p66": 0.0
+    }
+  },
+  "soil_types": [
+    "Black",
+    "Clayey",
+    "Loamy",
+    "Red",
+    "Sandy"
+  ],
+  "crop_types": [
+    "Barley",
+    "Cotton",
+    "Ground Nuts",
+    "Maize",
+    "Millets",
+    "Oil seeds",
+    "Paddy",
+    "Pulses",
+    "Sugarcane",
+    "Tobacco",
+    "Wheat"
+  ]
+}

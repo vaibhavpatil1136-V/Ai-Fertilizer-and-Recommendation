@@ -1,0 +1,16 @@
+streamlit==1.65.0
+pandas==3.0.6
+numpy==2.5.3
+pillow==12.3.0
+scikit-learn==1.9.1
+joblib==1.6.0
+xgboost==3.4.1
+plotly==7.1.0
+reportlab==5.0.1
+pytest==9.1.1
+gTTS==2.5.4
+bcrypt==5.0.0
+requests==2.34.2
+# Optional for EfficientNet-B0 Leaf Model training / GPU inference:
+# torch>=2.0.0
+# torchvision>=0.15.0
